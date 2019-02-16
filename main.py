@@ -1,5 +1,7 @@
-def func1(x):
-	return 2*x;
+from math import exp
+
+def sigmoid(x):
+	return 1/(1+exp(x))
 	
 if __name__=="__main__":
-	print(func1(2));
+	print(sigmoid(0.5))
