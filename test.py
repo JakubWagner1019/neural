@@ -1,13 +1,13 @@
 import unittest
-from main import func1
+import main
 
 class SomeTest(unittest.TestCase):
 	def setUp(self):
 		super(SomeTest, self).setUp()
-		self.mock_data = func1(2);
+		self.mock_data = main.sigmoid(0)
 	
 	def test(self):
-		self.assertEqual(self.mock_data,4)
+		self.assertEqual(self.mock_data,0.5)
 		
 	def tearDown(self):
 		super(SomeTest, self).tearDown()
